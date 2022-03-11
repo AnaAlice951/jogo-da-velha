@@ -1,0 +1,17 @@
+{
+  "name": "jogo-da-velha",
+  "version": "1.0.0",
+  "description": "api jogo da velha",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "node": "^17.5.0",
+    "uuid": "^8.3.2"
+  }
+}
