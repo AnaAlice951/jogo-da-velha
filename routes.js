@@ -93,10 +93,7 @@ routes.post("/game/:id/movement", (req, res) => {
       //Verifica se é o turno do player inserido
       if (games[i].player == req.body.player) {
         //Verifica se a posição inserida existe
-        if (
-          games[i].position[req.body.position.x][req.body.position.y] ===
-          undefined
-        )
+        if (games[i].position[req.body.position.x] == undefined || games[i].position[req.body.position.y] === undefined)
           return res.json({ msg: "Posição inválida" });
         //Verifica se a posição inserida está ocupada
         if (games[i].position[req.body.position.x][req.body.position.y] == "") {
